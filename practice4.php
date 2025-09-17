@@ -1,8 +1,3 @@
-<form action="" method="post">
-    <label for="number">Enter a number:</label>
-    <input type="number" id="number" name="number" required>
-    <input type="submit" value="Generate Table">
-</form>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,3 +38,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </body>
 
 </html>
+
