@@ -1,30 +1,3 @@
-<?php
-if (isset($_POST['number'])) {
-    $number = (int)$_POST['number'];
-    if ($number > 0) {
-        echo '<style>table { border-collapse: collapse; } th, td { padding: 10px; text-align: center; border: 1px solid black; }</style>';
-        echo '<table>';
-        echo '<tr><th>*</th>';
-        for ($i = 1; $i <= $number; $i++) {
-            echo '<th>' . $i . '</th>';
-        }
-        echo '</tr>';
-
-        for ($i = 1; $i <= $number; $i++) {
-            echo '<tr><th>' . $i . '</th>';
-            for ($j = 1; $j <= $number; $j++) {
-                echo '<td>' . ($i * $j) . '</td>';
-            }
-            echo '</tr>';
-        }
-
-        echo '</table>';
-    } else {
-        echo '<p style="color: red;">Please enter a positive integer.</p>';
-    }
-}
-?>
-
 <form action="" method="post">
     <label for="number">Enter a number:</label>
     <input type="number" id="number" name="number" required>
@@ -68,4 +41,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 </body>
+
 </html>
